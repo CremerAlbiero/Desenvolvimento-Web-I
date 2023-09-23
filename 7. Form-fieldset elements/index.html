@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form, fieldset, label, input</h2>
+    <h3>Cadastro (dados para o database)</h3>
+
+    
+   
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Seu Nome</label>
+            <input type="text"
+                   id="nome"
+                   name="nomeCliente"
+                   maxlength="30"
+                   minlength="10"
+                   size="10"
+                   required
+                   autofocus>
+
+        <label for="senha">Password</label>
+        <input type="senha"
+        id="senha"
+        name="password"
+        required
+        placeholder="Digite sua senha"
+        required
+        minlength="8">
+
+        <br>
+        <label value="Solteiro" for="estadoCivil" name="estadocivil">Solteiro</label>
+        <input value="Casado" type="radio" id="estadocivil" name="estadocivil" required>
+
+        <label for="estadoCivil" name="estadocivil">Casado</label>
+        <input type="radio" id="estadocivil" name="estadocivil" required>
+
+        <br>
+        <label for="">Cor Preferida</label>
+        <input type="color" name="color" id="ok">
+
+        <label for="">Grau de Satisfação</label>
+        <input type="range" name="" id="" min="1" max="5">
+
+
+        </fieldset>
+<!--name define a variável. -->
+        <fieldset>
+            <legend>Dados de Cobrança</legend>
+            <label for="cidade">Cidade</label>
+            <input type="text"
+                   name="cidade"
+                   id="cidade"
+                   value="Votorantim"
+>
+
+                
+                   
+            <label for="UF" ANME="UF">UF</label>
+            <input type="text"
+                    name="UF"
+                    id="UF"
+                    value="UF"
+                    disabled>
+
+<!-- <select> é um elemento para abrir seleção de dados. <optgroup> para agrupar e <option> para inserir as opções de dados
+o valor realmente enviado ao banco de dados é o value="Amazonas", não "AM". -->
+        <select name="UF" id="name">
+            <optgroup label="Sul">
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+            </optgroup>
+
+            <optgroup label="Sudeste">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="ES">ES</option>
+                <option value="MG">MG</option>
+            </optgroup>
+        </select> 
+
+        <input type="checkbox" name="Express" id="envio" checked>
+        <label for="envio">Express ?</label>
+
+                          
+        </fieldset>
+
+        <input type="submit"
+        value="cadastrar">
+    
+    </form>
+</body>
+</html>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form, fieldset, label, input</h2>
+    <h3>Cadastro (dados para o database)</h3>
+
+    
+   
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Seu Nome</label>
+            <input type="text"
+                   id="nome"
+                   name="nomeCliente"
+                   maxlength="30"
+                   minlength="10"
+                   size="10"
+                   required
+                   autofocus>
+
+        <label for="senha">Password</label>
+        <input type="senha"
+        id="senha"
+        name="password"
+        required
+        placeholder="Digite sua senha"
+        required
+        minlength="8">
+
+        <br>
+        <label value="Solteiro" for="estadoCivil" name="estadocivil">Solteiro</label>
+        <input value="Casado" type="radio" id="estadocivil" name="estadocivil" required>
+
+        <label for="estadoCivil" name="estadocivil">Casado</label>
+        <input type="radio" id="estadocivil" name="estadocivil" required>
+
+        <br>
+        <label for="">Cor Preferida</label>
+        <input type="color" name="color" id="ok">
+
+        <label for="">Grau de Satisfação</label>
+        <input type="range" name="" id="" min="1" max="5">
+
+
+        </fieldset>
+
+
+<!--name define a variável. -->
+
+    
+
+   
+        <fieldset>
+            <legend>Dados de Cobrança</legend>
+            <label for="cidade">Cidade</label>
+            <input type="text"
+                   name="cidade"
+                   id="cidade"
+                   value="Votorantim"
+>
+
+                
+                   
+            <label for="UF" ANME="UF">UF</label>
+            <input type="text"
+                    name="UF"
+                    id="UF"
+                    value="UF"
+                    disabled>
+
+<!-- <select> é um elemento para abrir seleção de dados. <optgroup> para agrupar e <option> para inserir as opções de dados
+o valor realmente enviado ao banco de dados é o value="Amazonas", não "AM". -->
+        <select name="UF" id="name">
+            <optgroup label="Sul">
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+            </optgroup>
+
+            <optgroup label="Sudeste">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="ES">ES</option>
+                <option value="MG">MG</option>
+            </optgroup>
+        </select> 
+
+        <input type="checkbox" name="Express" id="envio" checked>
+        <label for="envio">Express ?</label>
+
+                          
+        </fieldset>
+
+        <input type="submit"
+        value="cadastrar">
+    
+    </form>
+</body>
+</html>
+
+>>>>>>> c442e7748dc64474f7e5395192db410a20bdaad3

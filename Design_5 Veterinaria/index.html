@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background: #F2D8E6;
+            margin: 0;
+            padding: 0;
+            color: #400101;
+        }
+        
+        header {
+            background:#260101;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            border-bottom: solid white 1.5px;
+        }
+
+        #p-item {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        h1 {
+            margin-left: 100px;
+        }
+
+        figure {
+            display: flex;
+            justify-content: center;
+        }
+
+       img {
+        height: 600px;
+        width: 400px;
+        border: 2px solid #BF8D7A;
+        border-radius: 10%;
+       }
+
+       .img2 {
+        margin-left: 80px;
+       }
+
+       main {
+        margin-bottom: 40px;
+        margin-top: 100px;
+       }
+
+       .section2 {
+        border-top: solid white 0.5px;
+        background-color: #260101;
+        text-align: center;
+        color: white;
+       }
+
+       .table-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+       table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 0.3rem;
+        background-color: #F2DFEB;
+        color: #260101;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Serviços</p>
+            <p id="p-item">|</p>
+            <p>Cadastro</p>      
+        </nav>
+    </header>
+    <main>
+        <section class="title-image">
+            <h1>Clínica KittenCare</h1>
+            <figure>
+                <img class="img1" src="https://images.pexels.com/photos/4587993/pexels-photo-4587993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="dog">
+                <img class="img2" src="https://images.pexels.com/photos/4587956/pexels-photo-4587956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="cat">
+            </figure>
+        </section>
+    </main>
+    <section class="section2">
+        <h2>Serviços</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Atendimento Veterinário</td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>Banho e Tosa</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Castração</td>
+                        <td>R$ 1.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicação de Medicamentos</td>
+                        <td>R$ 600,00 por aplicação</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicação de Vacina para Cães e Gatos</td>
+                        <td>R$ 600,00 por aplicação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> 
+</body>
+</html>
