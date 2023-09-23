@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 8rem;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block; min-width: 50px; max-width: 75%; 
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    margin-left: -40px;
+}
+
+form {
+    padding: 10px;
+    border-radius: 25px 10px 10px 25px;
+    box-shadow: 0 0 10px 0 rgba(230, 91, 31, 0.5);
+}
+
+input {
+    border-right-color: inherit;
+    height: 60px;
+    width: 90vh;
+    padding: 14px;
+    border: none;
+}
+
+button {
+    background-color: #FF6A28;
+    color: white;
+    border: 0;
+    border-radius: 10%;
+    height: 60px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    background-color: lightgrey;
+}
+
+.grid-item {
+    border-right: solid 0.2px;
+    padding: 10px;
+    text-align: center;
+}
+
+#remove-border {
+    border: none;
+}
+
+.item-color, i {
+    color: #FF6A28;
+    font-weight: 600;
+}
+
+h1 {
+    color: #f56426;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+
+/* Retirei o círculo padrao do elemento <li> e substituí por ícones */
+
+ul {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+}
+
+.li-1 {
+    padding-left: var(--icon-space);
+}
+
+
+.li-1:before {
+    content: "\e4e6";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -0.2 );
+    width: var(--icon-space);
+  }
+
+  .li-2 {
+    padding-left: var(--icon-space);} 
+
+  .li-2:before {
+    content: "\e4c6"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -0.2 );
+    width: var(--icon-space);
+  }
+
+  
+  .li-3 {  padding-left: var(--icon-space);} 
+
+.li-3:before {
+    content: "\f786";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -0.2 );
+    width: var(--icon-space);
+  }
+
+
+/* Retirei a numeração padrão e apliquei uma customização */
+
+  ol { 
+    counter-reset: list;
+    list-style-type: none;
+}
+
+.list { 
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: -1.6rem;
+}
+
+.list:before { 
+    content: counter(list) " "; 
+    counter-increment: list;
+    border-radius: 90%;
+    font-size: 1.5rem;
+    padding: 3px;
+    margin-right: 1rem;
+    color: #FF6A28;
+    font-weight: 800;
+}
+
+
