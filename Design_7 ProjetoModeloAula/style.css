@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Roboto Slab", Georgia, serif;
+  
+}
+
+nav ul {
+    list-style-type: none;
+ 
+}
+
+nav ul li {
+    display: inline;
+
+    margin: 15px 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: beige;
+}
+
+/* element:hover will apply a rule when the user it's with the cursor at it */
+
+section {
+    background-color: beige;
+    border: 2px solid cornsilk;
+    border-radius: 10px;
+    
+    width: 80%;
+    margin: 30px auto 10px;
+}
+
+
+video {
+    width: 40%;
+    display: inline-block;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Usando a mesma classe, você pode aplicar isso para mais elementos. */
+
+
+#social-media {
+   display: flex;
+   gap: 10px;
+   justify-content: right;
+}
+
+
+
+
