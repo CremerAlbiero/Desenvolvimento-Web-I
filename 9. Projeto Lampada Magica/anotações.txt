@@ -1,0 +1,22 @@
+<script src="./script.js" defer></script>
+#defer irá carregar os elementos em memória, depois executar o script.
+
+
+#set (atribuir um valor e o atribuito dele.):
+
+function desligar() {
+    lampdes.setAttribute("src", "luzDesligada.gif")
+}
+
+#método .atributo
+function desligar() {
+    lampdes.src = "luzDesligada.gif"
+
+}
+
+#mudar style dos elementos pelo Javascript.
+document.getElementById('title').style.color = "red";
+lamp.des.style.display = "inline"
+
+#executar funcoes sem nenhum evento no HTML (onclick / onmousemove)
+
