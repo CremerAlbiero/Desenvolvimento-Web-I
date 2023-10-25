@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Pacotes de Viagem</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nomeCliente" id="nome">
+    <label>Pacotes:</label>
+    <input type="radio" name="pacotes" value="1000"><label for="">Pacote 1</label>
+    <input type="radio" name="pacotes" value="2000"><label for="">Pacote 2</label>
+    <input type="radio" name="pacotes" value="3000"><label for="">Pacote 3</label>
+    
+    <br>
+    <!--Usuário pode selecionar mais itens.-->
+    <input type="checkbox" name="adicionais" value="300">
+    <label for="">Alimentação</label>
+
+    <input type="checkbox" name="adicionais" value="150">
+    <label for="">Veículo</label>
+
+    <input type="checkbox" name="adicionais" value="50">
+    <label for="">Translado</label>
+    <br>
+    <button onclick="calcularTotalViagem()">Calcular Pacote</button>
+    <p id="msg_cliente"></p>
+    <p>Valor Total: R$ <span id="mostrar_total"></span></p>
+</body>
+</html>
