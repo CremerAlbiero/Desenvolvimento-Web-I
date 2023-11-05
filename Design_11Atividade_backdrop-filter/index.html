@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Backdrop-filter</title>
+</head>
+<body>
+    <main class="carrossel">
+        <div class="item inicio">
+            <h1>Backdrop-filter</h1>
+            <p>Exemplos visuais de como você pode usar o backdrop-filter para criar efeitos visuais sobre o plano de fundo.</p>
+        </div>
+
+        <div class="item efeito-blur">
+            <h2>Efeito Blur</h2>
+            <p>O efeito 'blur' cria um efeito de desfoque no plano de fundo.</p>
+            <p>Pode ser um efeito visual para destacar um elemento sobre outro, muito utilizado para sobrepor e desfocar imagens.</p>
+            <p>Exemplo atual: 'backdrop-filter: blur(10px)'</p>
+        </div>
+
+
+        <div class="item efeito-brightness">
+            <h2>Efeito Brightness</h2>
+            <p>A Proriedade 'brightness()' é usada para ajustar o brilho do elemento no plano de fundo, é possível aumentar ou diminuir.</p>
+            <p>Por padrão, o brilho é (1). Assim, qualquer valor acima disso está aumentando o brilho.</p>
+            <p>Exemplo atual: 'backdrop-filter: brightness(1.2)'.</p>
+        </div>
+
+        <div class="item efeito-brightnes-escuro">
+            <h2>Efeito Brightness</h2>
+            <p>Também pode ser utilizado para diminuir o brilho, aplicando um valor menor que 1.</p>
+            <p>Exemplo atual: 'brightness(0.2)'</p>
+            <p>O brilho foi diminuido para 20% do normal, tornando o elemento de fundo mais escuro.</p>
+        </div>
+
+        <div class="item efeito-contrast">
+            <h2>Efeito Contrast</h2>
+            <p> A propriedade 'contrast()' é usada para ajustar o contraste do plano de fundo.</p>
+            <p>Torna as cores mais ou menos acentuadas.</p>
+            <p>Considera APENAS as cores do plano de fundo.</p>
+            <p>Exemplo: 'backdrop-filter: contrast(2)'. As cores estão 2 vezes mais acentuadas.</p>
+        </div>
+
+        <div class="item efeito-grayscale">
+            <h2>Efeito Grayscale</h2>
+            <p>A propriedade 'grayscale()' é usada para converter o conteúdo em tons de cinza.</p>
+            <p>Cria um efeito visual em que o elemento de fundo e seu conteúdo são exibidos em escala de cinza, sem cores.</p>
+            <p>Os valores variam de '0' a '1'. Portanto, usar grayscale(1) já é suficiente.</p>
+            <p>Exemplo atual: 'backdrop-filter: grayscale(1)'</p>
+        </div>
+
+        <div class="item efeito-sepia">
+            <h2>Efeito Sépia</h2>
+            <p>O efeito é utlizado para aplicar um efeito convertendo suas cores em tons sépias.</p>
+            <p>Isso cria um efeito visual que lembra as fotografias antigas.</p>
+            <p>Exemplo atual: 'backdrop-filter: sepia(1)'</p>
+        </div>
+
+        <div class="item efeito-sepia">
+            <h2>Efeito Sépia</h2>
+            <p>O efeito é utlizado para aplicar um efeito convertendo suas cores em tons sépias.</p>
+            <p>Isso cria um efeito visual que lembra as fotografias antigas.</p>
+            <p>Exemplo atual: 'backdrop-filter: sepia(1)'</p>
+        </div>
+
+        <div class="item efeito-hue">
+            <h2>Efeito hue-rotate</h2>
+            <p>A propriedade hue-rotate() em CSS é usada para ajustar a matiz (ou cor) de um elemento, permitindo que você crie uma rotação de cores em torno do espectro de cores.</p>
+            <p>Essa propriedade permite que você aplique uma transformação na matiz do elemento, mudando as cores, mas mantendo a luminosidade e a saturação.</p>
+            <p>Exemplo atual: 'backdrop-filter: hue-rotate(90deg). Rotacionando as cores em 90 graus.</p>
+        </div>
+        
+        <div class="botoes">
+            <button id="anterior">Anterior</button>
+            <button id="proximo">Próximo</button>
+        </div>
+    </main>
+
+    <script>
+        let index = 0;
+        const itens = document.querySelectorAll('.item');
+        const botoes = document.querySelectorAll('button');
+
+        function exibirItem() {
+            itens.forEach(item => item.style.display = 'none');
+            itens[index].style.display = 'block';
+        }
+
+        function avancar() {
+            if (index < itens.length - 1) {
+                index++;
+                exibirItem();
+            }
+        }
+
+        function retroceder() {
+            if (index > 0) {
+                index--;
+                exibirItem();
+            }
+        }
+
+        botoes[0].addEventListener('click', retroceder);
+        botoes[1].addEventListener('click', avancar);
+
+        exibirItem();
+    </script>
+</body>
+</html>

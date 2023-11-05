@@ -1,0 +1,80 @@
+body {
+    background-image: url('./img/example-img.jpeg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.item {
+    margin-top: 10px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);  /*O fundo está minimamente transparente para visualizar os efeitos. */
+    width: 90vw;
+    height: 90vh;
+    border-radius: 10px;
+    transition: backdrop-filter 0.5s;
+}
+
+.inicio {
+    background-color: whitesmoke;
+}
+
+.efeito-blur {
+    backdrop-filter: blur(10px);
+}
+
+.efeito-brightness {
+    backdrop-filter: brightness(1.5);
+    font-weight: 550;
+}
+
+.efeito-brightnes-escuro {
+    backdrop-filter: brightness(0.2);
+    color: whitesmoke;
+}
+
+.efeito-contrast {
+    backdrop-filter: contrast(2);
+    font-weight: 600;
+  }
+  
+.efeito-grayscale {
+    backdrop-filter: grayscale(1);
+  }
+
+.efeito-sepia {
+    backdrop-filter: sepia(1);
+  }
+
+.efeito-hue {
+    backdrop-filter: hue-rotate(90deg);
+  }
+
+.botoes {
+    margin-top: 2px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/*Ao passar o cursor muda a cor. */
+button:hover {
+    background-color: #0056b3;
+}
