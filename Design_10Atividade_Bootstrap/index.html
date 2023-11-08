@@ -19,80 +19,81 @@
 <body>
   <div class="container-sm">
     <main id="DetalhesPedido">
-        <form action="">
+        <form id="pedidoForm">
             <div class="alert alert-primary mt-2" role="alert">Hamburgueria XGostoso
               <p>17:34:16</p>
             </div>
             <div class="row align-items">
               <div class="col-sm-6">
                 <label class="form-label" for=""><i class="fa-solid fa-phone"></i> Telefone</label>
-                <input class="form-control" type="text" name="" id="">
+                <input class="form-control" type="text" name="" id="telefone">
               </div>
               <div class="col-sm-6">
                 <label class="form-label" for=""><i class="fa-regular fa-keyboard"></i> Nome do Cliente</label>
-                <input class="form-control" type="password" name="senha" id="senha">
+                <input class="form-control" type="text" name="nome" id="nomeCliente">
               </div>
             </div>
             <div class="row align-items my-4">
               <div class="col-sm-6">
-                  <label class="form-label" for=""><i class="fa-solid fa-burger"></i> Combos</label><br>
-                  <input class="form-control" type="password" name="senha" id="senha">
+                  <label class="form-label" for="combos"><i class="fa-solid fa-burger"></i> Combos</label><br>
+                    <select class="form-control" id="combos" name="combos">
+                      <option value="20">X Saudável</option>
+                      <option value="30">X Salada</option>
+                      <option value="30">X Burger</option>
+                      <option value="50">X Tudo</option>
+                    </select>
                 </div>
                 <div class="col-sm-3">
                   <div class="form-check form-check-inline">
                       <i class="fa-solid fa-bacon"></i>
-                      <label class="form-label" for="">Adicionais</label><br>
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Bacon</label>
+                      <label class="form-label" for="Adicionais">Adicionais</label><br>
+                      <input class="form-check-input" type="checkbox" id="bacon" value="2">
+                      <label class="form-check-label" for="bacon">Bacon</label>
                     </div>
                   <br>
                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                      <label class="form-check-label" for="inlineCheckbox1">Cheddar</label>
+                      <input class="form-check-input" type="checkbox" id="cheddar" value="2">
+                      <label class="form-check-label" for="cheddar">Cheddar</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                      <label class="form-check-label" for="inlineCheckbox2">Picles</label>
+                      <input class="form-check-input" type="checkbox" id="pickles" value="2">
+                      <label class="form-check-label" for="pickles">Pickles</label>
                   </div>
               </div>
               <div class="col-sm-3">
                   <div class="form-check">
                       <i class="fa-solid fa-motorcycle"></i>
                       <label class="form-label" for="">Entrega</label><br>
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label" for="exampleRadios1">
+                      <input class="form-check-input" type="radio" name="entrega" id="paraViagem" value="10" checked>
+                      <label class="form-check-label" for="paraViagem">
                         Para Viagem
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                      <label class="form-check-label" for="exampleRadios2">
+                      <input class="form-check-input" type="radio" name="entrega" id="balcao" value="0">
+                      <label class="form-check-label" for="balcao">
                         Balcão
                       </label>
                     </div>
               </div>
             </div>
           <div class="container text-center">
-              <button class="btn btn-primary mx-2" type="submit">Calcular</button>
-              <button class="btn btn-primary mx-2" type="submit">Novo Pedido</button>
-              <button class="btn btn-primary mx-2" type="submit">Recibo</button>
+              <button class="btn btn-primary mx-2" type="button" id="calcularButton">Calcular</button>
+              <button class="btn btn-primary mx-2" type="reset" id="novoPedidoButton">Novo Pedido</button>
+              <button class="btn btn-primary mx-2" type="button" id="reciboButton">Recibo</button>
           </div>
+              <div class="my-2">
+                  <label class="form-label" for="">Total a pagar:</label>
+                  <input class="form-control input-color" readonly type="text" name="totalPagar" id="totalPagar">
+              </div>
+              <div class="my-2">
+                  <label class="form-label" for="floatingTextarea2">Descrição do Pedido:</label>
+                  <textarea readonly class="form-control input-color" placeholder="Descrição Gerada..." id="descricaoPedido" style="height: 100px"></textarea>
+                </div>
           </form>
     </main>
-
-    <section class="mt-5" id="DetalhesPagamento">
-        <form action="">
-            <div class="my-2">
-                <label class="form-label" for="">Total a pagar:</label>
-                <input class="form-control input-color" readonly type="text" name="" id="">
-            </div>
-            <div class="my-2">
-                <label class="form-label" for="floatingTextarea2">Descrição do Pedido:</label>
-                <textarea readonly class="form-control input-color" placeholder="Descrição Gerada..." id="floatingTextarea2" style="height: 100px"></textarea>
-              </div>
-        </form>
-    </section>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
