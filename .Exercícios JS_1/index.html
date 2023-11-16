@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto JS_1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="Ex_01">
+        <form action="">
+            <fieldset>
+                <h3>Exercício 1</h3>
+           
+                <input type="number" id="salario" value="" placeholder="Salário R$: 2000.50">
+                <input type="number" id="perc_sal" placeholder="Percentual de Aumento">
+                <button onclick="Calcular_Ex01()" type="button">Calcular</button>
+           
+                <p class="box" id="resultado01"></p>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section id="Ex_02">
+        <form action="">
+            <fieldset class="flex">
+                <h3>Exercício 2: Área</h3>
+           
+                <input type="text" id="base" value="" placeholder="Valor da Base.">
+                <input type="text" id="altura" placeholder="Altura. Exemplo: 10">
+                <button onclick="Calcular_Ex02()" type="button">Calcular Área</button>
+
+                <textarea name="" id="resultado02" cols="30" rows="10" readonly class="box"></textarea>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section id="Ex_03">
+        <form action="">
+            <fieldset class="flex">
+                <h3>Exercício 3: calcular média ponderada</h3>
+
+                <label for="nota1">Nota 1 (peso 30%):</label>
+                <input type="number" id="nota1" value="" placeholder="Ex: 7" maxlength="4">
+
+                <label for="nota2">Nota 2 (peso 70%):</label>
+                <input type="number" id="nota2" placeholder="Ex: 8.5" maxlength="4">
+
+                <button onclick="Calcular_Ex03()" type="button">Calcular Média</button>
+
+                <label id="resultado03"></label>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section id="Ex_04">
+        <form action="">
+            <fieldset>
+                <h3>Exercício 4: calcular anos, meses, dias, horas, minutos</h3>
+
+                <label for="nota1">Ano de Nascimento: </label>
+                <input type="number" maxlength="4" minlength="4" id="ano_nasc">
+
+                <button onclick="Calcular_Ex04()" type="button">Calcular</button>
+                <p>Resultados no Console.</p>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section id="Ex_05">
+        <form action="">
+            <fieldset>
+                <h3>Exercício 5: Consumo Médio Gasolina</h3>
+
+                <input type="number" placeholder="Km percorridos" id="km">
+                <input type="number" placeholder="Qtde de Litros." id="litros">
+
+                <button onclick="Calcular_Ex05()" type="button">Calcular CM</button>
+            
+                
+                <p id="resultado05" class="box"></p>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section id="Ex_06">
+        <form action="">
+            <fieldset class="flex">
+                <h3>Exercício 6: Cálculo salário</h3>
+                <label for="">Valor hora/funcionário:</label>
+                <input type="number" id="valor_h">
+
+                <label>Horas trabalhadas</label>
+                <input type="number" value="40" id="h_normais" readonly>
+
+                <label>Horas extras</label>
+                <input type="number" name="" value="22" id="h_extras" readonly>
+
+                <label>Quantidade de Refeições:</label>
+                <input type="number" id="refeicoes">
+
+                <button onclick="Calcular_Ex06()" type="button">Calcular Salário</button>
+            
+                <textarea id="resultado06" class="box"></textarea>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section id="Ex_07">
+        <form action="">
+            <fieldset>
+                <h3>Exercício 7: Número Randômico par ou ímpar</h3>
+                <button type="button" onclick="Calcular_Ex07()">Gerar um Número</button>
+
+                <p id="mostrar_n"></p>
+                <p id="resultado07"></p>
+            </fieldset>
+        </form>
+    </section>
+
+    
+</body>
+</html>

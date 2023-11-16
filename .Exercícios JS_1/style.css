@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 10px 10px 10px 50px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 800px;
+}
+
+.box {
+    display: block;
+    width: 50%;
+    border: 1px solid;
+    color: black;
+    height: 60px;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border: 1px darkblue solid;
+    margin-left: 20px;
+    border-radius: 2px;
+    width: auto;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#Ex_07 {
+    padding-bottom: 40px;
+}
